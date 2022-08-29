@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  background-color: rgb(31, 36, 36) !important;
+}
+
+a {
+  text-decoration: none !important;
+  color: aliceblue !important;
+}
+
+.contenedor {
+  background-color: black;
+  width: 650px;
+  height: 90vh;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 600px) {
+  .contenedor {
+    width: 410px;
+  }
+}/*# sourceMappingURL=styles.css.map */

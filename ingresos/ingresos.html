@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingresos</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container-fluid bg-dark">
+        <!-- HEADER -->
+        <div class="container">
+            <h1 class="display-1 text-center text-light  p-2">Ninja Counter</h1>
+        </div>
+
+        <div class="container px-4 d-flex justify-content-center my-5">
+            <div class="row">
+                <div class="col">
+                    <div class="p-3 border bg-light">
+                        <h3><b>Total ingresos del mes</b>:</h3>
+                        <h2 class="text-center" id="total"> 0 </h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- NAVEGACION -->
+
+        <div class="container d-flex flex-row">
+            <div class="col d-flex justify-content-center my-1">
+                <button type="button" class="btn btn-outline-success"> <a href="../index.html">Home</a> </button>
+            </div>
+
+            <div class="col d-flex justify-content-center my-1">
+                <button type="button" class="btn btn-outline-warning"> <a
+                        href="../gastos/gastos-fijos/gastos-fijos.html">Gastos Fijos</a> </button>
+            </div>
+
+            <div class="col d-flex justify-content-center my-1">
+                <button type="button" class="btn btn-outline-info"> <a
+                        href="../gastos/gastos-comunes/gastos-comunes.html">Gastos Comunes</a> </button>
+            </div>1
+        </div>
+        <!-- FORMULARIO -->
+        <div class="container text-center my-3">
+
+            <label for="op1" class="text-light">ingreso de dinero</label>
+            <br> 
+            <input type="number" class="my-2 p-2" name="op1" placeholder="indica la cantidad" id="op1"></input>
+        </div>
+
+        <button class="btn btn-outline-primary"
+            onclick="ingresarDatos(op1.value || 0)">enviar</button>
+
+        <!-- FOOTER -->
+        <div class="container text-center text-light fixed-bottom bg-dark">
+            <footer>
+                <h3>Created by Cyberkrane_2022©</h3>
+            </footer>
+        </div>
+
+    </div>
+
+    <script src="./ingresos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
